@@ -61,8 +61,7 @@ public class StringOperation {
 		
 	}
 
-
-public void describeConstable(String str) {
+	public void describeConstable(String str) {
 		System.out.println("\n11.describeConstable() returns: "+str.describeConstable());
 		
 	}
@@ -82,7 +81,7 @@ public void describeConstable(String str) {
 		
 	}
 
-public void getBytes2(String str) {
+	public void getBytes2(String str) {
 		System.out.println("\n15.another getBytes() returns: "+ str.getBytes());
 		
 	}
@@ -92,6 +91,104 @@ public void getBytes2(String str) {
 		
 	}
 
+	public void indent(String str) {
+		System.out.println("\n17.indent returns: "+str.indent(0));
+		
+	}
+
+	public void indexOf(String str) {
+		System.out.println("\n18.indexOf() returns: "+ str.indexOf("e"));
+		
+	}
+
+	public void indexOf1(String str) {
+		System.out.println("\n19.another indexOf() returns: " + str.indexOf("lo"));
+		
+	}
+
+	public void intern(String str) {
+		System.out.println("\n20.intern() returns: "+ str.intern());
+		
+	}
+
+	public void isBlank(String str) {
+		System.out.println("\n21.isBlank() returns: "+ str.isBlank());
+		
+	}
+
+	public void isEmpty(String str) {
+		System.out.println("\n21.isBlank() returns: "+ str.isEmpty());
+		
+	}
+
+	public void lastIndexOf(String str) {
+		System.out.println("\n21.lastIndexOf() returns: "+ str.lastIndexOf("l"));
+		
+	}
+
+	public void lastIndexOf1(String str) {
+		System.out.println("\n22.another lastIndexOf return: "+ str.lastIndexOf("ll"));
+		
+	}
+
+	public void length(String str) {
+		System.out.println("\n23.Length of the String is: "+str.length());	
+		
+	}
+	
+	public void repeat(String str) {
+		System.out.println("\n24.repeat() returns: "+ str.repeat(3));
+		
+	}
+
+	public void replace(String str) {
+		System.out.println("\n25.replace() returns: "+ str.replace('e', 'a'));
+		
+	}
+
+	public void strip(String str) {
+		System.out.println("\n26.strip() returns: "+ str.strip());
+		
+	}
+
+	public void stripIndent(String str) {
+		System.out.println("\n27.stripIndent() returns: "+ str.stripIndent());
+		
+	}
+
+	public void stripLeading(String str) {
+		System.out.println("\n28.stripLeading() returns: "+ str.stripLeading());
+		
+	}
+
+	public void stripTrailing(String str) {
+		System.out.println("\n29.stripTrailing() returns: "+ str.stripTrailing());
+		
+	}
+
+	public void substring(String str) {
+		System.out.println("\n30.substring() returns: "+ str.substring(1));
+		
+	}
+
+	public void toLowerCase(String str) {
+		System.out.println("\n31.toLowerCase() returns: "+ str.toLowerCase());
+		
+	}
+
+	public void toUpperCase(String str) {
+		System.out.println("\n32.toUpperCase() returns: "+ str.toUpperCase());
+		
+	}
+
+	public void trim(String str) {
+		System.out.println("\n32.trim() returns: "+ str.trim());
+		
+	}
+	
+	
+
+}
 
 
 public class StringMain {
@@ -179,5 +276,7 @@ public class StringMain {
 		
 		operation.trim(str);
 		
-}
+
+	}
+
 }
