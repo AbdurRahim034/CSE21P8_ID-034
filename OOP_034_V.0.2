@@ -1,0 +1,183 @@
+import java.util.Scanner;
+
+public class StringOperation {
+	
+	public void charAt(String str) {
+		System.out.println("1.charAt() returns Character at a position."+"\nIn this case at position " 
+	+  (str.length()-1) + " is: \'" +str.charAt(str.length()-1)+"\'");;
+	}
+	
+	public void chars(String str) {
+		System.out.println("\n2.chars() returns the code point value(ASCII) of each characters: ");
+		str.chars().forEach(System.out::println);
+	}
+	
+	public void codePointAt(String str) {
+		System.out.println("\n3.codePointAt() returns code point value(ASCII) at position a position "
+	+ "\nIn this case at position " +(str.length()-1) +" is: \'" +str.codePointAt(str.length()-1)+"\'");
+	}
+	
+	public void codePointBefore(String str) {
+		System.out.println("\n4.codePointBefore() returns code point value(ASCII) before a position "
+	+"\nIn this case before position " + (str.length()-1) +" is: " +str.codePointBefore((str.length()-1)));
+	}
+	
+	public void codePointCount(String str) {
+		System.out.println("\n5.codePointCount() returns the number of unicode code points at a range." 
+	+"\nIn this case(0 to end) which is: " +str.codePointCount(0, str.length()));
+	}
+	
+	public void codePoints(String str) {
+		System.out.println("\n6.codePoints() returns each char from string as ASCII value." 
+	+"\nIn this case: ");
+		str.codePoints().forEach(System.out::println);
+	}
+	
+	public void compareTo(String str) {
+		System.out.println("\n7.compareTo() compares two string lexicographically."
+	+"\nComparing Hello with Hello: " +str.compareTo("Hello"));
+	}
+
+	public void compareToIgnoreCase(String str) {
+		System.out.println("\n8.compareToIgnoreCase() compares two string lexicographically ignoring Case" 
+	+"\nComparing Hello with hello: " +str.compareToIgnoreCase("hello"));
+		
+	}
+
+	public void concat(String str) {
+		System.out.println("\n9.concat() adds new string to the existing string." +
+				"\nAdding world after Hello: " + str.concat(" world"));
+		
+	}
+
+	public void contains(String str) {
+		System.out.println("\n10.contains() returns boolean if certain char or pattern exists in the string: "
+				+ "\nChecking if A exists in Hello: " + str.contains("A"));
+	}
+
+	public void contentEquals(String str) {
+		System.out.println("\n11.contentEquals() returns boolean if certain pattern exists in the string: "
+				+ "\nChecking if lo exists in Hello: " + str.contains("lo"));
+		
+	}
+
+
+public void describeConstable(String str) {
+		System.out.println("\n11.describeConstable() returns: "+str.describeConstable());
+		
+	}
+
+	public void endsWith(String str) {
+		System.out.println("\n12.endsWith() returns: "+ str.endsWith("est"));
+		
+	}
+
+	public void equalsIgnoreCase(String str) {
+		System.out.println("\n13.equalsIgnoreCase() returns: "+ str.equalsIgnoreCase("hello"));
+		
+	}
+
+	public void getBytes(String str) {
+		System.out.println("\n14.getBytes() returns: "+ str.getBytes());
+		
+	}
+
+public void getBytes2(String str) {
+		System.out.println("\n15.another getBytes() returns: "+ str.getBytes());
+		
+	}
+
+	public void hashCode(String str) {
+		System.out.println("\n16.hashCode() returns: "+str.hashCode());
+		
+	}
+
+
+
+public class StringMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		Scanner s = new Scanner(System.in);
+		StringOperation operation = new StringOperation();
+		
+//		System.out.println("Enter a string to start the operation: ");
+		
+//		String str = s.nextLine();
+		String str = "Hello java";
+		
+		operation.charAt(str);
+		
+		operation.chars(str);
+		
+		operation.codePointAt(str);
+		
+		operation.codePointBefore(str);
+		
+		operation.codePointCount(str);
+		
+		operation.codePoints(str);
+		
+		operation.compareTo(str);
+		
+		operation.compareToIgnoreCase(str);
+		
+		operation.concat(str);
+		
+		operation.contains(str);
+		
+		operation.contentEquals(str);
+		
+		operation.describeConstable(str);
+		
+		operation.endsWith(str);
+		
+		operation.equalsIgnoreCase(str);
+		
+		operation.getBytes(str);
+		
+		operation.getBytes2(str);
+		
+		operation.hashCode(str);
+		
+		operation.indent(str);
+		
+		operation.indexOf(str);
+		
+		operation.indexOf1(str);
+		
+		operation.intern(str);
+		
+		operation.isBlank(str);
+		
+		operation.isEmpty(str);
+		
+		operation.lastIndexOf(str);
+		
+		operation.lastIndexOf1(str);
+		
+		operation.length(str);
+		
+		operation.repeat(str);
+		
+		operation.replace(str);
+		
+		operation.strip(str);
+		
+		operation.stripIndent(str);
+		
+		operation.stripLeading(str);
+		
+		operation.stripTrailing(str);
+		
+		operation.substring(str);
+		
+		operation.toLowerCase(str);
+		
+		operation.toUpperCase(str);
+		
+		operation.trim(str);
+		
+}
+}
